@@ -27,7 +27,7 @@ A front-end-only login and sign-up interface built with **HTML**, **CSS**, and *
 ## 🛠️ To Run
 
 1. Clone or download this repository.
-2. Open `index.html` in your browser.
+2. Open `login.html` in your browser.
 3. Create an account, log in, and test it out!
 
 ---
