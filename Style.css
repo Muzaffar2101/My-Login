@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.auth-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+}
+
+.tab.active {
+  background: #007BFF;
+  color: white;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form.hidden {
+  display: none;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.auth-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.auth-form input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.auth-form button {
+  padding: 0.75rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}

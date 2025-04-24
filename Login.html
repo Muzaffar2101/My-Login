@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="auth-container">
+    <div class="tabs">
+      <button class="tab active" onclick="showForm('login')">Login</button>
+      <button class="tab" onclick="showForm('signup')">Sign Up</button>
+    </div>
+
+    <form id="login-form" class="auth-form" onsubmit="handleLogin(event)">
+      <h2>Login</h2>
+      <label for="login-username">Username</label>
+      <input type="text" id="login-username" required>
+
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="signup-form" class="auth-form hidden" onsubmit="handleSignup(event)">
+      <h2>Sign Up</h2>
+      <label for="signup-username">Username</label>
+      <input type="text" id="signup-username" required>
+
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" required>
+
+      <label for="signup-confirm">Confirm Password</label>
+      <input type="password" id="signup-confirm" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
